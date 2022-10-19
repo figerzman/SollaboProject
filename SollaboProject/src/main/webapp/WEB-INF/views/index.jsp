@@ -5,8 +5,14 @@
 <head>
 	<title>Home</title>
 <link href="${pageContext.request.contextPath }/resources/css/test.css" rel="stylesheet">
+<c:import url="default/header.jsp"/>
 </head>
 <body>
-	<h1>홈화면입니다</h1>
+	
+
+
+    
+    
 </body>
+<c:import url="default/footer.jsp"/>
 </html>

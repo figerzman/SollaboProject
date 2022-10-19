@@ -10,23 +10,15 @@
 <meta charset="UTF-8">
 <title>default/header.jsp</title>
 <style type="text/css">
-.title {
-	border: 1px solid purple;
-  	position: absolute;
-  	text-align: center; 
-}
 .leftdiv {
+	background-color: #f5d682;
+ 	border: 1px solid red;
 	position: fixed;
 	top: 60px;
 	bottom: 0;
-	width: 200px;
 	padding-top: 20px;
-	background-color: #ffffff;
 }
-.leftdiv h1 {
-	color: black;
-	padding: 10px 0 10px 20px;
-}
+
 .leftdiv > ul {
 	width: 200px;
 }
@@ -40,21 +32,42 @@
 }
 
 .rightdiv {
-	border: 1px solid purple;
-	width: 200px;
-	height: 300px;
-	float: right;
-	margin: 0 2px 2px 0;
+	position: fixed;
+	right: 0;
+	display: block;
+    width: 200px;
+}
+.rightdiv:hover .side{
+    height: 100%;
+    width: 300px;
+    overflow: hidden
+}
+.side {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    transition: 0.5s;
+}
+.side ul {
+    list-style: none;
+    padding: 0;
+
+}
+.side{
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background: chartreuse;
+    transition-duration: 0.5s;
+}
+.sidemenu-list li {
+    line-height: 3rem;
 }
 </style>
 </head>
 <body>
-	<div class="wrap">
-		<div class="header">
-			<h1 class="title">SOLLABO</h1>
-		</div>
-	</div>
 	<div class="leftdiv">
+		<h1 class="title">SOLLABO</h1>
 		<h1>Brand</h1>
 		<ul>
 			<li><a href="#" class="active">adi</a></li>
@@ -64,19 +77,26 @@
 		</ul>
 		<h1>Sales</h1>
 	</div>
-	<div class="rightdiv">
-		<div class="loginmenu">
-	      <ul>
-	      	<li><a href="#">login</a></li>
-	        <li><a href="#">장바구니</a></li>
-	        <li><a href="#">관리자 페이지</a></li>
-	      </ul>	    
-	    </div>
-		
+	<div class = "rightdiv"> 
+	<a href="#" class="top-menu">버튼</a>    
+	<div class = "side">
+		<ul class = "sidemenu-list">
+			<li>
+				<a href="#"><span class = "title">Login</span></a>
+            </li>
+            <li>
+            	<a href="#"><span class = "title">장바구니</span></a>
+            </li>
+            <li>
+            	<a href="#"><span class = "title">관리자 페이지</span></a>
+           </li>
+		</ul>
 	</div>
-
+</div>
 </body>
 </html>
+
+
 
 
 

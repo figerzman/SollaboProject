@@ -12,9 +12,10 @@
 .footer {
 	align-items: center;
 	position: absolute;
-	bottom: 0px;
-	margin: 100px 0;	
-}
+	margin: 95% 50% 0;
+	height: 300px;
+	width: 300px;
+	
 span {
 	align-items: center;
 	color: maroon;
