@@ -150,7 +150,7 @@ input#rightside{
 	<div class="sidebar_content1">
 	<ul>
 		<li><a href="/sollabo/member/login">로그인</a></li>
-		<li><a>장바구니</a></li>
+		<li><a href="/sollabo/order/cart">장바구니</a></li>
 		<li><a>관리자</a></li>
 	</ul>
 	<label for="rightside"></label>
