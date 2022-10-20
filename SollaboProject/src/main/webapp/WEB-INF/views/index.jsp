@@ -5,14 +5,14 @@
 <head>
 	<title>Home</title>
 <link href="${pageContext.request.contextPath }/resources/css/test.css" rel="stylesheet">
-<c:import url="default/header.jsp"/>
+
 </head>
 <body>
-	
+<c:import url="default/header.jsp"/>	
 
 
     
-    
+<c:import url="default/footer.jsp"/>    
 </body>
-<c:import url="default/footer.jsp"/>
+
 </html>

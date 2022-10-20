@@ -10,12 +10,15 @@
 <title>default/footer.jsp</title>
 <style type="text/css">
 .footer {
-	align-items: center;
 	position: absolute;
-	margin: 95% 50% 0;
-	height: 300px;
-	width: 300px;
-	
+    bottom: 0;
+    padding: 0 175px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    backface-visibility: hidden;
+    width: 100%;
+}	
 span {
 	align-items: center;
 	color: maroon;
