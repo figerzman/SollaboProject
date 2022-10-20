@@ -13,7 +13,7 @@
 <body>
 	<h3>장바구니</h3>
 
-	<table border="1" summary="" class="xans-element- xans-order xans-order-normnormal xans-record-">
+	<table border="1" summary="" class="cart-main">
 		<colgroup>
 			<col style="width:27px">
 			<col style="width:92px">
