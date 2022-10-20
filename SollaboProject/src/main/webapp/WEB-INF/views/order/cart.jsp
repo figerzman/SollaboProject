@@ -13,7 +13,7 @@
 <body>
 	<h3>장바구니</h3>
 
-	<table border="1" summary="" class="cart-main">
+	<table border="1" class="cart-main">
 		<colgroup>
 			<col style="width:27px">
 			<col style="width:92px">
@@ -21,7 +21,6 @@
 			<col style="width:98px">
 			<col style="width:120px">
 			<col style="width:120px">
-			<col style="width:85px">
 		</colgroup>
 		<thead>
 			<tr>
@@ -31,18 +30,17 @@
                     <th scope="col">판매가</th>
                     <th scope="col">수량</th>
                     <th scope="col">합계</th>
-                    <th scope="col">선택</th>
             </tr>
         </thead>
 		<tfoot class="right">
 			<tr>
 				<td colspan="8">
-				상품구매금액<span class="displaynone"> </span> <span id="normal_normal_benefit_price_area" class="displaynone">
-				 - 상품할인금액 <span id="normal_normal_benefit_price"></span> </span> = 합계 : KRW
+				상품구매금액<span class="cal"> <!-- 상품가격총합들어갈자리 --></span>
+				 - 상품할인금액 <span class="cal" id="discount"></span> = 합계 : KRW <span class="cal"></span>
 				</td>
 	        </tr>
         </tfoot>
-        <tbody class="xans-element- xans-order xans-order-list center">
+        <tbody class="cart-">
         	<tr class="xans-record-">
 				<td>
 					<input type="checkbox" id="basket_chk_id_0" name="basket_product_normal_type_normal">
@@ -80,11 +78,6 @@
 					
 					</div>
 				</td>
-		        <td class="button">
-		        	<a href="javascript:;" class="btnSubmit " onclick="Basket.orderBasketItem(0);">주문하기</a>
-		            <br>
-		            <a href="javascript:;" class="btnNormal" onclick="Basket.deleteBasketItem(0);"><i class="icoDelete"></i> 삭제</a>
-		        </td>
         	</tr>
 		</tbody>
 	</table>
@@ -100,7 +93,7 @@
 	</div>
 	
 	<!-- 총 주문금액 : 국내배송상품 -->
-	<div class="xans-element- xans-order xans-order-totalsummary ec-base-table typeList gBorder total  ">
+	<div class="cart-delete">
 	
 		<table border="1" summary="">
 			<caption>총 주문금액</caption>
