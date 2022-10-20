@@ -30,73 +30,96 @@
 .leftdiv > ul > li > a:hover {
 	background-color: silver;
 }
-/* .rightdiv {
-	position: fixed;
-	right: 0;
-	display: block;
-    width: 200px;
-}
-.rightdiv:hover .side{
-    height: 100%;
-    width: 300px;
-    overflow: hidden
-}
-.side {
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    transition: 0.5s;
-}
-.side ul {
-    list-style: none;
-    padding: 0;
-}
-.side{
-    width: 0;
-    height: 100%;
-    overflow: hidden;
-    background: chartreuse;
-    transition-duration: 0.5s;
-}
-.sidemenu-list li {
-    line-height: 3rem;
-} */
+
 /* 헤더(아이콘)*/
 header {
-background-color:#f5f5f5;
-position: fixed;
-top: 60px;
-bottom: 0;
-right: 0;
-padding-top: 20px;
-z-index:4;
+	background-color:#f5f5f5;
+	position: fixed;
+	top: 60px;
+	bottom: 0;
+	right: 0;
+	padding-top: 20px;
+	z-index:4;
 }
-header > div {max-width:1200px;margin:0 auto;position:relative;min-height:60px;}
+header > div {
+	max-width:1200px;
+	margin:0 auto;
+	position:relative;
+	min-height:60px;
+}
 header label.menu1 {
-position:absolute;
-top:50%;
-right:10px;
-transform:translateY(-50%);width:24px;
-height:24px;background:url('${pageContext.request.contextPath }/resources/image/menu.png') 0 0 no-repeat;
-cursor:pointer;}
+	position:absolute;
+	top:50%;
+	right:10px;
+	transform:translateY(-50%);width:24px;
+	height:24px;background:url('${pageContext.request.contextPath }/resources/image/menu.png') 0 0 no-repeat;
+	cursor:pointer;
+}
 
 /*우측 사이드 컨텐츠 바 */
-.sidebar_content1 {position:fixed;top:0;right:-300px;width:300px;height:100%;background:#999;transition:all .35s;z-index:5;}
-.sidebar_content1 > ul {margin:20px;}
-.sidebar_content1 > ul > li {border-bottom:1px solid #ccc;list-style:none;}
-.sidebar_content1 > ul > li > a {display:inline-block;width:auto;color:#000000;padding:10px;margin:10px;background:#f5f5f5;}
-.sidebar_content1 label[for*='rightside'] {position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;}
+.sidebar_content1 {
+	position:fixed;
+	top:0;
+	right:-300px;
+	width:300px;
+	height:100%;
+	background:#999;
+	transition:all .35s;
+	z-index:5;
+	}
+.sidebar_content1 > ul {
+	margin:20px;
+}
+.sidebar_content1 > ul > li {
+	border-bottom:1px solid #ccc;
+	list-style:none;
+}
+.sidebar_content1 > ul > li > a {
+	display:inline-block;
+	width:auto;
+	color:#000000;
+	padding:10px;
+	margin:10px;
+	background:#f5f5f5;
+}
+.sidebar_content1 label[for*='rightside'] {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
 
 /* 사이드바 외 배경영역(우측) */
-.background1 {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8);transition:all .35s;opacity:0;visibility:hidden;z-index:1;}
+.background1 {
+	position:fixed;
+	top:0;left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.8);
+	transition:all .35s;
+	opacity:0;
+	visibility:hidden;
+	z-index:1;
+}
 
 /* input 체크 우측 */
-input#rightside:checked ~ header label {background-position:-24px 0;}
-input#rightside:checked ~ .sidebar_content1 {right:0;}
-input#rightside:checked ~ .background1  {opacity:1;visibility:visible;}
+input#rightside:checked ~ header label {
+	background-position:-24px 0;
+}
+input#rightside:checked ~ .sidebar_content1 {
+	right:0;
+}
+input#rightside:checked ~ .background1  {
+	opacity:1;
+	visibility:visible;
+}
 
 /*우측 사이드바 */
-input#rightside{display:none;}
+input#rightside{
+	display:none;
+}
 	
 </style>
 </head>
@@ -126,7 +149,7 @@ input#rightside{display:none;}
 	<!-- 우측 사이드바 영역 -->
 	<div class="sidebar_content1">
 	<ul>
-		<li><a>로그인</a></li>
+		<li><a href="/sollabo/member/login">로그인</a></li>
 		<li><a>장바구니</a></li>
 		<li><a>관리자</a></li>
 	</ul>
@@ -134,25 +157,7 @@ input#rightside{display:none;}
 	</div>
 	<!-- 사이드바 외 영역 -->
 	<label for="rightside" class="background1"></label>
-	
-	
-	<!-- 근호씨 사이드바 추후 삭제`
-	<div class = "rightdiv"> 
-	<a href="#" class="top-menu">버튼</a>    
-	<div class = "side">
-		<ul class = "sidemenu-list">
-			<li>
-				<a href="#"><span class = "title">Login</span></a>
-            </li>
-            <li>
-            	<a href="#"><span class = "title">장바구니</span></a>
-            </li>
-            <li>
-            	<a href="#"><span class = "title">관리자 페이지</span></a>
-           </li>
-		</ul>
-	</div>
-</div> -->
+
 </body>
 </html>
 
