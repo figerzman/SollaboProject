@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>주문상세페이지입니다</h1>
+	<h1>주문상세페이지입!!!</h1>
 </body>
 </html>
